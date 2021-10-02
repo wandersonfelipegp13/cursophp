@@ -152,6 +152,57 @@
             echo $key.': '.$value.'<br>';
         }
 
+        // Array functions
+
+        echo in_array('Stone Ocean', $parts), "<br>";
+        
+        $keys = array_keys($person);
+        print_r($keys);
+        echo '<br>';
+
+        $values = array_values($person);
+        print_r($values);
+        echo '<br>';
+
+        $info = array_merge($parts, $mcs);
+        print_r($info);
+        echo '<br>';
+
+        echo array_pop($info), '<br>';
+        print_r($info);
+        echo '<br>';
+
+        echo array_shift($info), '<br>';
+        print_r($info);
+        echo '<br>';
+
+        array_unshift($stands, "Metallica", "Black Sabbath", "Aerosmith");
+        print_r($stands);
+        echo '<br>';
+
+        array_push($stands, "Earth, Wind, and Fire", "Heaven's Door", "Red Hot Chili Pepper");
+        print_r($stands);
+        echo '<br>';
+
+        $stand = array('Bad Company', 'Killer Queen', 'Tusk');
+        $user = array('Keicho Nijimura', 'Yoshikage Kira', 'Johnny Joestar');
+        $combine = array_combine($stand, $user);
+        print_r($combine);
+        echo '<br>';
+
+        $sum = array(2.5, 1, 3, 3.5, 3);
+        print array_sum($sum);
+        echo '<br>';
+
+        $date = "2021/10/02";
+        $newDate = explode('/', $date);
+        print_r($newDate);
+        echo '<br>';
+
+        $androxus = array("Fear", "is", "an", "illusion...", "except", "yours.", "That's", "real.");
+        echo implode(' ', $androxus);
+        echo '<br>';
+
     ?>
 
 </body>
