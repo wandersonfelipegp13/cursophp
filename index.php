@@ -203,6 +203,33 @@
         echo implode(' ', $androxus);
         echo '<br>';
 
+	// conditionals 
+
+	$number = 10;
+
+	if($number == 10): echo 'YES! YES! YES! YES!';
+	elseif($number >= 100): echo 'OH MY GOOOD!!!';
+	else: echo 'NO! NO! NO! NO! NO!';
+	endif;
+	echo '<br>';	
+	
+	echo ($number > 7) ? 'NICE!' : 'OH NOOO!';	
+	echo '<br>';
+
+	$color = 'Golden';
+
+	switch($color):
+	case 'Golden':
+		echo 'Wind.';
+		break;
+	case 'Red':
+		echo 'Hot Chili Peppers';
+		break;
+	default:
+		echo 'Purple Haze';
+	endswitch;
+
+	echo '<br>';
     ?>
 
 </body>
