@@ -230,6 +230,68 @@
 	endswitch;
 
 	echo '<br>';
+
+	// exponentiation
+	
+	echo 2 ** 3, '<br>';
+
+	// pre-increment
+	
+	$value = 1;
+
+	echo ++$value, '<br>';
+
+	// post-increment
+
+	echo $value++, '<br>';
+	echo $value, '<br>';
+
+	// comparison operators
+
+	if(10 == "10"):
+		echo 'YES!';
+	else:
+		echo 'NO!';
+	endif;
+
+	echo '<br>';
+
+	// identity operator (=== and !===)
+	
+	if(10 === "10"):
+		echo 'YES!';
+	else:
+		echo 'NO!';
+	endif;
+	
+	echo '<br>';
+
+	// Not equal
+
+	if(10 <> 11):
+		echo 'YES!';
+	else:
+		echo 'NO!';
+	endif;
+
+	echo '<br>';
+
+	// spaceship, return -1, 0 or 1
+	
+	var_dump(10 <=> 20);
+
+	echo '<br>';
+
+	// XOR
+	
+	if(($stand[0] == 'Bad Company') xor ($stand[2] == 'Tusk')):
+		echo 'YES!';
+	else:
+		echo 'NO!';
+	endif;	
+
+	echo '<br>';
+
     ?>
 
 </body>
