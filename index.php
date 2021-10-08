@@ -292,6 +292,31 @@
 
 	echo '<br>';
 
+    // string
+
+    $dio_scream = 'wryyyyyyyy';
+    echo strtoupper($dio_scream).'<br>';
+
+    $jojo = 'JOJO';
+    echo strtolower($jojo).'<br>';
+
+    $the_world = 'The World';
+
+    echo substr($the_world, 4).'<br>';
+    echo substr($the_world, 4, 2).'<br>';  
+
+    echo str_pad($jojo, 5).'<br>';
+    echo str_pad($jojo, 7, '*').'<br>';
+    echo str_pad($jojo, 7, '*', STR_PAD_LEFT).'<br>';
+    echo str_pad($jojo, 7, '*', STR_PAD_BOTH).'<br>';
+
+    echo str_repeat('YES! ', 5).'<br>';
+
+    $giorno = 'Giorno Joestar';
+    echo str_replace("Joestar", "Giovanna", $giorno).'<br>';
+    $andro = implode($androxus, " ");
+    echo strpos($andro, 'illusion').'<br>'; 
+
     ?>
 
 </body>
