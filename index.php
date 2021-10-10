@@ -168,6 +168,7 @@
         print_r($info);
         echo '<br>';
 
+
         echo array_pop($info), '<br>';
         print_r($info);
         echo '<br>';
@@ -316,6 +317,16 @@
     echo str_replace("Joestar", "Giovanna", $giorno).'<br>';
     $andro = implode($androxus, " ");
     echo strpos($andro, 'illusion').'<br>'; 
+
+    // number functions
+    
+    $db_prize = 1234.56;
+    echo 'R$ '.number_format($db_prize, 2, ',', '.').'<br>';
+    
+    echo round(3.6).'<br>';
+    echo ceil(5.10).'<br>'; 
+    echo floor(8.90).'<br>'; 
+    echo rand(1, 20).'<br>'; 
 
     ?>
 
