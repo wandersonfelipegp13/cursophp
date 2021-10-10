@@ -327,8 +327,35 @@
     echo ceil(5.10).'<br>'; 
     echo floor(8.90).'<br>'; 
     echo rand(1, 20).'<br>'; 
+    
+    // superglobals
+
+    $x = 10;
+    $y = 03;
+
+    function sum() {
+        echo $GLOBALS['x'] + $GLOBALS['y'].'<br>'; 
+    }
+
+    sum();
+
+    echo $_SERVER['PHP_SELF'].'<br>';
+    echo $_SERVER['SERVER_NAME'].'<br>';
+    echo $_SERVER['SCRIPT_FILENAME'].'<br>';
+    echo $_SERVER['DOCUMENT_ROOT'].'<br>';
+    echo $_SERVER['SERVER_PORT'].'<br>';
+    echo $_SERVER['REMOTE_ADDR'].'<br>';
 
     ?>
+        
+    <form action="data.php" method="POST">
+        Name: <input type="text" name="name"><br>
+        Email: <input type="email" name="email"><br>
+        <!-- <input type="submit" name="send"> -->
+        <button type="submit"> Send </button><br>
+    </form>    
+
+    <a href="data_get.php?age=21&alias=Wande">Send data</a>
 
 </body>
 
