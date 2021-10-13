@@ -1,3 +1,6 @@
+!file_upload/files/
+file_upload/files/*
+
 # vim
 .gitignore~
 *.un~
