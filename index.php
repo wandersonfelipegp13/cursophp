@@ -315,7 +315,7 @@
 
     $giorno = 'Giorno Joestar';
     echo str_replace("Joestar", "Giovanna", $giorno).'<br>';
-    $andro = implode($androxus, " ");
+    $andro = implode(" ", $androxus);
     echo strpos($andro, 'illusion').'<br>'; 
 
     // number functions
