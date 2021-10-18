@@ -1,5 +1,5 @@
-!file_upload/files/
 file_upload/files/*
+multiple_file_upload/files/*
 
 # vim
 .gitignore~

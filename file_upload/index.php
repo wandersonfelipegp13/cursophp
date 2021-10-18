@@ -14,6 +14,15 @@
 
                 if(move_uploaded_file($tmp, $dir.$new_name)):
                     $message = "Successfully uploaded!";
+                    
+                    /*
+                    try {
+                        unlink($dir.$new_name);
+                    } catch (Exception $e) {
+                        $message = "Can't delete!";
+                    }
+                    */
+                
                 else:
                     $message = "Unable to upload!";
                 endif;
@@ -22,13 +31,14 @@
             endif;
 
             echo $message;
+
         endif;
 
         ?>
 
         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
             <input type="file" name="file"><br>
-            <input type="submit" name="send">
+            <input type="submit" name="send"><br>
         </form>
     </body>
 </html>
