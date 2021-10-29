@@ -44,12 +44,12 @@ class ProductDAO {
     
     }
 
-    public function delete() {
+    public function delete($id) {
 
         $sql = 'DELETE FROM products WHERE id = ?';
 
         $stmt = Connection::getConn()->prepare($sql);
-        $stmt->bindValue(1, $p->getId());
+        $stmt->bindValue(1, $id);
 
         $stmt->execute();
     
