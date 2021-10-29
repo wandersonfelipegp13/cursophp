@@ -3,11 +3,16 @@
 require_once 'vendor/autoload.php';
 
 $product = new \App\Model\Product;
-$product->setName("Notebook DELL");
-$product->setDesc("i5, 4bg");
+
+$product->setId(1);
+$product->setName("Notebook ASUS");
+$product->setDesc("i7, 32gb");
 
 $productDao = new \App\Model\ProductDAO;
-$productDao->read();
+$productDao->update($product);
+
+/*
 foreach($productDao->read() as $product):
     echo $product['name'].'<br>'.$product['description'].'<hr>';
 endforeach;
+*/

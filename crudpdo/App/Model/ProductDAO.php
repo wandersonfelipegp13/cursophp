@@ -45,6 +45,13 @@ class ProductDAO {
     }
 
     public function delete() {
+
+        $sql = 'DELETE FROM products WHERE id = ?';
+
+        $stmt = Connection::getConn()->prepare($sql);
+        $stmt->bindValue(1, $p->getId());
+
+        $stmt->execute();
     
     }
 }
