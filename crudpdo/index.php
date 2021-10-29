@@ -7,4 +7,7 @@ $product->setName("Notebook DELL");
 $product->setDesc("i5, 4bg");
 
 $productDao = new \App\Model\ProductDAO;
-$productDao->create($product);
+$productDao->read();
+foreach($productDao->read() as $product):
+    echo $product['name'].'<br>'.$product['description'].'<hr>';
+endforeach;
